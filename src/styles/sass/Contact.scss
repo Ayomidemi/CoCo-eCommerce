@@ -1,0 +1,55 @@
+@import '../variables';
+@import '../mixins';
+@import '../base';
+
+.contact{
+    @include flex(center, center);
+    margin-bottom: 5rem;
+    
+}
+h1.hire__text {
+    font-size: 40px;
+    margin-bottom: 1rem;
+    background-image: linear-gradient(to right, rgba($primary, 0.85), rgba($extra-orange, 0.85));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    @include flex(flex-start, flex-start);
+}
+input.contact{
+    display: block;
+    width: 100%;
+    padding: 0 20px;
+    border: 2px solid rgba(0,0,0,.1);
+    border-radius: 5px;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    height: 50px;
+    line-height: 46px;
+    margin: 20px 0px;
+    outline: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: .1px;
+    background: none;
+    border: 2px solid hsla(0,0%,100%,.2);
+    box-shadow: $box-shadow;
+}
+textarea#message{
+    height: 120px;
+    background: none;
+    padding: 0 20px;
+    width: 100%;
+    line-height: 46px;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: .1px;
+    border: 2px solid hsla(0,0%,100%,.2);
+    box-shadow: $box-shadow;
+
+}
+button {
+   @include button ;
+   justify-content: center;
+       background: $primary;
+}

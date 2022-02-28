@@ -1,0 +1,528 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+html {
+  font-size: 13px;
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 11px;
+  }
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+link {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffb399;
+}
+
+img {
+  max-width: 100%;
+}
+
+.color-brown {
+  color: #a0522d;
+}
+
+.bg-brown {
+  background-color: #a0522d;
+}
+
+.color-orange {
+  color: #ff7f50;
+}
+
+.bg-orange {
+  background-color: #ff7f50;
+}
+
+.color-pink {
+  color: #ff69b4;
+}
+
+.bg-pink {
+  background-color: #ff69b4;
+}
+
+.color-white {
+  color: #fff;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.color-black {
+  color: #000;
+}
+
+.bg-black {
+  background-color: #000;
+}
+
+.color-main {
+  color: #ffb399;
+}
+
+.bg-main {
+  background-color: #ffb399;
+}
+
+.color-red {
+  color: #ff0000;
+}
+
+.bg-red {
+  background-color: #ff0000;
+}
+
+.color-blue {
+  color: #b0c4de;
+}
+
+.bg-blue {
+  background-color: #b0c4de;
+}
+
+.grid-col-0 {
+  -ms-grid-columns: (1fr)[0];
+      grid-template-columns: repeat(0, 1fr);
+}
+
+.grid-col-1 {
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+}
+
+.grid-col-2 {
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-col-3 {
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-col-4 {
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-col-5 {
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+}
+
+.grid-col-6 {
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+}
+
+.grid-col-7 {
+  -ms-grid-columns: (1fr)[7];
+      grid-template-columns: repeat(7, 1fr);
+}
+
+.grid-col-8 {
+  -ms-grid-columns: (1fr)[8];
+      grid-template-columns: repeat(8, 1fr);
+}
+
+@media only screen and (max-width: 1024px) {
+  .grid-col-md-0 {
+    -ms-grid-columns: (1fr)[0];
+        grid-template-columns: repeat(0, 1fr);
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .grid-col-md-1 {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .grid-col-md-2 {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .grid-col-md-3 {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .grid-col-md-4 {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .grid-col-md-5 {
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .grid-col-md-6 {
+    -ms-grid-columns: (1fr)[6];
+        grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .grid-col-md-7 {
+    -ms-grid-columns: (1fr)[7];
+        grid-template-columns: repeat(7, 1fr);
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .grid-col-md-8 {
+    -ms-grid-columns: (1fr)[8];
+        grid-template-columns: repeat(8, 1fr);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .grid-col-sm-0 {
+    -ms-grid-columns: (1fr)[0];
+        grid-template-columns: repeat(0, 1fr);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .grid-col-sm-1 {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .grid-col-sm-2 {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .grid-col-sm-3 {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .grid-col-sm-4 {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .grid-col-sm-5 {
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .grid-col-sm-6 {
+    -ms-grid-columns: (1fr)[6];
+        grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .grid-col-sm-7 {
+    -ms-grid-columns: (1fr)[7];
+        grid-template-columns: repeat(7, 1fr);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .grid-col-sm-8 {
+    -ms-grid-columns: (1fr)[8];
+        grid-template-columns: repeat(8, 1fr);
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 1620px;
+  padding: 0 50px;
+  margin: auto;
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 0 10px;
+  }
+}
+
+.main {
+  margin-top: 4.3rem;
+  margin-bottom: 2rem;
+  min-height: 100vh;
+}
+
+@media only screen and (max-width: 1024px) {
+  .main {
+    margin-top: calc(70px + 20px);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .main {
+    margin-top: calc(40px + 10px);
+  }
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+.header {
+  background: #fbf7f7;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  height: 4.3rem;
+  -webkit-transition: height 0.3s ease;
+  transition: height 0.3s ease;
+  -webkit-box-shadow: #ffb399 0px 8px 24px;
+          box-shadow: #ffb399 0px 8px 24px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .header {
+    height: 70px;
+    -webkit-box-shadow: #ffb399 0px 8px 24px;
+            box-shadow: #ffb399 0px 8px 24px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    height: 40px;
+  }
+}
+
+.header .container {
+  height: 100%;
+}
+
+.header.shrink {
+  height: 70px;
+  -webkit-box-shadow: #ffb399 0px 8px 24px;
+          box-shadow: #ffb399 0px 8px 24px;
+  z-index: 100;
+}
+
+@media only screen and (max-width: 600px) {
+  .header.shrink {
+    height: 40px;
+  }
+}
+
+.header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  color: #ffb399;
+  font-size: 2.2rem;
+  text-decoration: none;
+}
+
+.header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+  font-size: 1rem;
+  color: dimgray;
+}
+
+.header__menu__item ~ .header__menu__item {
+  margin-left: 39px;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .header__menu__item ~ .header__menu__item {
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .header__menu__item ~ .header__menu__item {
+    margin-left: 10px;
+  }
+}
+
+.header__menu__item.active {
+  font-weight: 600;
+  color: #ffb399;
+  text-decoration: none;
+}
+
+.header__menu__item:hover {
+  color: #ffb399;
+}
+
+.header__menu__left, .header__menu__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+}
+
+.header__menu__right {
+  font-size: 2.2rem;
+  color: dimgray;
+  cursor: pointer;
+}
+
+.header__menu__right__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  .header__menu__right__item {
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .header__menu__right {
+    font-size: 1.7rem;
+  }
+}
+
+.header__menu__left__close {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .header__menu__left {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 179, 153, 0.95)), to(rgba(255, 127, 80, 0.95)));
+    background: linear-gradient(to right, rgba(255, 179, 153, 0.95), rgba(255, 127, 80, 0.95));
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding-top: 30px;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    -webkit-transition: -webkit-transform 0.5s ease;
+    transition: -webkit-transform 0.5s ease;
+    transition: transform 0.5s ease;
+    transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  }
+  .header__menu__left.active {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  .header__menu__left__item ~ .header__menu__left__item {
+    margin-left: unset;
+    margin-top: 20px;
+  }
+  .header__menu__left__close {
+    display: block;
+    position: absolute;
+    left: 20px;
+    font-size: 2.5rem;
+  }
+}
+
+.header__menu__mobile-toggle {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .header__menu__mobile-toggle {
+    display: block;
+    font-size: 2.5rem;
+  }
+}
+/*# sourceMappingURL=Header.css.map */

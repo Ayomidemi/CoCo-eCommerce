@@ -1,0 +1,37 @@
+@import '../variables';
+@import '../mixins';
+@import '../base';
+
+.footer {
+    padding: 70px 0;
+    box-shadow: $box-shadow;
+    font-size: 1.1rem;
+    color: $gray;
+    background: $cream-color;
+
+    &__about {
+        p {
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__title {
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+        font-weight: 600;
+        color: $black;
+    }
+
+    &__content {
+        p {
+            margin-bottom: 1.25rem;
+        }
+    }
+}
+a:hover {
+    color: $primary;
+}
+.foot {
+    font-size: 4rem;
+    color: $primary;
+}

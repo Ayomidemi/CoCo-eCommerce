@@ -1,0 +1,14 @@
+@import '../variables';
+@import '../mixins';
+@import '../base';
+
+h1 {
+    margin-top: 7rem;
+    margin-bottom: 5rem;
+    font-size: 6rem;
+    text-align: center;
+    color: $gray;
+}
+.col {
+    color: $primary;
+}

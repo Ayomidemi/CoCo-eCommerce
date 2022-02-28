@@ -1,0 +1,44 @@
+@import '../variables';
+@import '../mixins';
+@import '../base';
+
+
+.custom-checkbox {
+    @include flex(center, flex-start);
+
+    cursor: pointer;
+
+    &:hover {
+        color: $primary;
+    }
+
+    input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+
+    &__checkmark {
+        margin-right: 10px;
+        height: 15px;
+        width: 15px;
+        border: 1px solid $gray;
+
+        .chck {
+            transform: scale(0);
+            transition: transform 0.3s ease;
+        }
+    }
+
+    input:checked ~ &__checkmark {
+        background-color: $primary;
+        border: 1px solid $primary;
+        color: $white;
+    }
+
+    input:checked ~ &__checkmark > .chck {
+        transform: scale(1);
+    }
+}

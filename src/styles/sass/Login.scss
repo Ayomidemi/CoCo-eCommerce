@@ -1,0 +1,56 @@
+@import '../mixins';
+@import '../variables';
+@import '../base';
+
+.login {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, rgba($secondary, 0.49), rgba($primary, 0.49)), 
+    url(../../img/sect.jpg);
+    /* background-image: url(../Image/bg.jpg); */
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+  }
+  
+  .loginTitle {
+    font-size: 50px;
+    color: $cream-color;
+  }
+  
+  .loginForm {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .loginForm > label {
+    margin: 10px 0;
+    color: $cream-color;
+  }
+  
+  .loginInput {
+    padding: 10px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: $box-shadow;
+  }
+  
+  .loginInput:focus {
+    outline: none;
+  }
+  
+  .loginButton {
+    margin-top: 20px;
+    cursor: pointer;
+    background:linear-gradient(to right, rgba($primary, 0.85), rgba($secondary, 0.85));
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+  }

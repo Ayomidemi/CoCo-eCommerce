@@ -1,0 +1,21 @@
+@import './styles/_base.scss';
+@import './styles/_mixins.scss';
+@import './styles/_variables.scss';
+
+
+@import './styles/sass/Buttons.scss';
+@import './styles/sass/Cart.scss';
+@import './styles/sass/Catalog.scss';
+@import './styles/sass/CheckBox.scss';
+@import './styles/sass/Footer.scss';
+@import './styles/sass/Header.scss';
+@import './styles/sass/Policy.scss';
+@import './styles/sass/Product.scss';
+@import './styles/sass/ProductCard.scss';
+@import './styles/sass/ProductModal.scss';
+@import './styles/sass/Section.scss';
+@import './styles/sass/Slider.scss';
+@import './styles/sass/Counter.scss';
+@import './styles/sass/GiftShop.scss';
+@import './styles/sass/Contact.scss';
+@import './styles/sass/Login.scss';

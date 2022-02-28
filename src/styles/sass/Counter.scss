@@ -1,0 +1,81 @@
+@import '../variables';
+@import '../mixins';
+@import '../base';
+
+@import "./node_modules/bootstrap/scss/functions";
+@import "./node_modules/bootstrap/scss/_variables";
+@import "./node_modules/bootstrap/scss/_mixins";
+
+.count {
+    background: linear-gradient(to right, rgba($secondary, 0.49), rgba($primary, 0.49)), 
+    url(../../img/card2.jpg);
+    /* background-image: url(../Image/bg.jpg); */
+    width: 100%;
+    height: 70vh;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: 80% !important;
+    overflow: hidden;
+    padding: 0 50px;   
+
+    @include mobile {
+       height: 90vh;
+    }
+
+}
+
+    .count .content {
+        width: 100%;
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: space-between; 
+        flex-wrap: wrap;
+        
+        @include tablet {
+        padding: 30px 0px;
+        
+    }
+
+    
+    }
+    
+    .content .boxin {
+        width: 20%;
+        box-shadow: $box-shadow;
+        border-radius: 5px;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        color: $cream-color;
+        flex-direction: column;
+
+        @include tablet {
+            width: 50%;
+            margin-bottom: 20px;
+            
+        }
+        @include mobile {
+        width: 100%;
+        padding: 7px;
+    }
+    }
+    
+    .content .boxin .counter {
+        font-size: 3rem;
+        color: $cream-color;
+        font-weight: 500;
+        color: $cream-color;
+
+        @include mobile {
+            font-size: 2rem;
+        }
+    }
+    .content .boxin .text {
+        font-weight: 400;
+        color: $cream-color;
+        font-size: 1.5rem;
+
+    }
+
