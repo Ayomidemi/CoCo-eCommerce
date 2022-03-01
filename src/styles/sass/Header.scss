@@ -45,7 +45,13 @@
         font-size: 2.2rem;
         text-decoration: none;
 
-        
+        @include mobile {
+           @include flex(center, center);
+        }
+
+        @include tablet {
+            @include flex(center, center);
+         }
     }
 
     &__menu {
