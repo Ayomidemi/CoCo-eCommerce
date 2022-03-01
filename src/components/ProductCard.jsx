@@ -35,6 +35,8 @@ const ProductCard = props => {
                     </span>
                 </div>
             </Link>
+
+            <Link to={`/catalog/${props.slug}`}>
             <div className="product-card__btn">
                 <Button
                     size="sm"    
@@ -45,6 +47,7 @@ const ProductCard = props => {
                     buy now
                 </Button>
             </div>
+            </Link>
         </div>
     )
 }

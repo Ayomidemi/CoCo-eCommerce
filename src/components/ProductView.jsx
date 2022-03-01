@@ -6,7 +6,9 @@ import PropTypes from 'prop-types'
 import { useDispatch } from 'react-redux'
 
 import { addItem } from '../redux/shopping-cart/cartItemsSlide'
-import { remove } from '../redux/product-modal/productModalSlice'
+
+
+
 
 import Button from './Button'
 import CommaNumbers from '../utilis/CommaNumbers'
@@ -86,23 +88,7 @@ const ProductView = props => {
         }
     }
 
-    const goToCart = () => {
-        if (check()) {
-            let newItem = {
-                slug: product.slug,
-                color: color,
-                size: size,
-                price: product.price,
-                quantity: quantity
-            }
-            if (dispatch(addItem(newItem))) {
-                dispatch(remove())
-                props.history.push('/cart')
-            } else {
-                alert('Fail')
-            }
-        }
-    }
+    
 
     return (
         <div className="product">
@@ -187,7 +173,9 @@ const ProductView = props => {
                 </div>
                 <div className="product__info__item">
                     <Button onClick={() => addToCart()}>Add To Cart</Button>
-                    <Button onClick={() => goToCart()}>Go to Cart</Button>
+
+                    
+                    
                 </div>
             </div>
             <div className={`product-description mobile ${descriptionExpand ? 'expand' : ''}`}>
